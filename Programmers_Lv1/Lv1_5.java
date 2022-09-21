@@ -23,18 +23,29 @@ import java.util.*;
 
 public class Lv1_5 {
 
+
+//	public class Solution {
+//	    public int solution(int n) {
+//	        int answer = 0;
+//	    while(n>0){
+//	        answer+=n%10;
+//	        n=n/10;
+//	    }
+//	        return answer;
+//	    }
+//	}
+	
+	public class Solution {
 	    public int solution(int n) {
-	    	n = 987;
 	        int answer = 0;
-	        if(n>10) {
-		        if(n%10!=0) {
-		        	answer+=n%10;
-		        	n=n%10/10;
-		        }else if(n%10==0) {
-		        	n=n/10;
-		        }
-	        }
+	        String s = Integer.toString(n); //int n을 String으로 변환
 	        
+	        for(int i=0; i<s.length(); i++){
+	            answer += Integer.parseInt(s.substring(i, i+1));
+	        }
 	        return answer;
-}
-}
+	    }
+	}
+}	
+	
+	

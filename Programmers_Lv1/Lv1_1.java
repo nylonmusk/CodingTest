@@ -16,9 +16,7 @@ package Programmers_Lv1;
 public class Lv1_1 {
 
 	public static void main(String[] args) {
-		
 		int num = 0;
-		
 		if(num%2==1) {
 			System.out.println("Odd");
 		}else if(num%2==0) {
@@ -27,6 +25,7 @@ public class Lv1_1 {
 	}
 }
 
+// return값 있을때 
 class Solution {
     public String solution(int num) {
         String answer = "";

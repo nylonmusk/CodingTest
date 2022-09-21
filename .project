@@ -3,6 +3,7 @@
 	<name>CodingTest_</name>
 	<comment></comment>
 	<projects>
+		<project>CodingTest</project>
 	</projects>
 	<buildSpec>
 	</buildSpec>

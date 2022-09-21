@@ -18,26 +18,25 @@ import java.lang.Math;
 //입출력 예#2
 //3은 양의 정수의 제곱이 아니므로, -1을 리턴합니다.
 
-// 풀이 
+// 틀린 풀이 
 public class Lv1_4 {
-//	class Solution {
-//	    public long solution(long n) {
-//	        long answer = -1;
-//	        for(long i=1; i<n; i++){
-//	            if(n==Math.pow(i,2)){
-//	                answer+=Math.pow((i+1),2)+1;
-//	                break;
-//	            }
-//	        }
-//	        return answer;
-//	    }
-//	}
-//}
+	class Solution {
+	    public long solution(long n) {
+	        long answer = -1;
+	        for(long i=1; i<n; i++){
+	            if(n==Math.pow(i,2)){
+	                answer+=Math.pow((i+1),2)+1;
+	                break;
+	            }
+	        }
+	        return answer;
+	    }
+	}
+}
 
-// 틀림 => 
+ 
 // 다른사람 풀이 
-
-class Solution {
+class Solution4{
   public long solution(long n) {
       if (Math.pow((int)Math.sqrt(n), 2) == n) {
             return (long) Math.pow(Math.sqrt(n) + 1, 2);
@@ -45,6 +44,4 @@ class Solution {
 
         return -1;
   }
-}
-
 }
