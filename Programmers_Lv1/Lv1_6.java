@@ -9,7 +9,7 @@ package Programmers_Lv1;
 //입출력 예
 //n	return
 //12345	[5,4,3,2,1]
-//		
+// 틀림 다시 풀것 
 public class Lv1_6 {
 	class Solution {
 		  public int[] solution(long n) {

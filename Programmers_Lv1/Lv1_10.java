@@ -15,10 +15,11 @@ package Programmers_Lv1;
 public class Lv1_10 {
 
 }
-
+// 내풀이 
 class Solution10 {
     public int solution(String s) {
         int answer = Integer.parseInt(s);;
         return answer;
     }
 }
+

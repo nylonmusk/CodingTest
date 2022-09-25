@@ -1,5 +1,7 @@
 package Programmers_Lv1;
 
+import java.util.function.IntPredicate;
+
 //문자열 내 p와 y의 개수
 //문제 설명
 //대문자와 소문자가 섞여있는 문자열 s가 주어집니다. s에 'p'의 개수와 'y'의 개수를 비교해 같으면 True, 다르면 False를 return 하는 solution를 완성하세요. 'p', 'y' 모두 하나도 없는 경우는 항상 True를 리턴합니다. 단, 개수를 비교할 때 대문자와 소문자는 구별하지 않습니다.
@@ -24,7 +26,7 @@ package Programmers_Lv1;
 public class Lv1_7 {
 	
 }
-// 못푼문
+// 못푼문제 
 class Solution7 {
     boolean solution(String s) {
     	int p = 0;
@@ -33,11 +35,9 @@ class Solution7 {
         s = s.toLowerCase();
         for(int i=0; i<s.length(); i++) {
         	char c = s.charAt(i);
-        	if(c=='p') {
-        		p++;
-        	}if(c=='y') {
-        		y++;
-        	}
+        	if(c == 'p') 	p++;
+        	if(c == 'y')	y++;
+        	
         }
         if(p==y) {
         	return answer;
@@ -51,8 +51,8 @@ class Solution7 {
 class Solution7_ {
     boolean solution(String s) {
         s = s.toUpperCase();
-
-        return s.chars().filter( e -> 'P'== e).count() == s.chars().filter( e -> 'Y'== e).count();
+        
+        return s.chars().filter(e-> e == 'P').count() == s.chars().filter( e -> 'Y'== e).count();
     }
 }
 

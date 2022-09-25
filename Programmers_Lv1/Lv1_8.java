@@ -27,28 +27,30 @@ package Programmers_Lv1;
 public class Lv1_8 {
 
 }
-//class Solutio1n {
-//    public boolean solution(int x) {
-//        boolean answer = true;
-//        int sum=0;
-//        String s = "" + x;
-//        for(int i=0; i<s.length(); i++) {
-//        	if(x>0) {
-//        		sum +=(x%10);
-//        		x=x/10;
-//        	}
-//        }
-//        System.out.println(x%sum);
-//        if(x%sum==0) {
-//        	return answer;
-//        }else {
-//        	return false;
-//        }
-//        
-//    }
-//}
 
+//  내가푼거  틀림 
 class Solution8 {
+    public boolean solution(int x) {
+        boolean answer = true;
+        int sum=0;
+        String s = "" + x;
+        for(int i=0; i<s.length(); i++) {
+        	if(x>0) {
+        		sum +=(x%10);
+        		x=x/10;
+        	}
+        }
+        System.out.println(x%sum);
+        if(x%sum==0) {
+        	return answer;
+        }else {
+        	return false;
+        }
+        
+    }
+}
+
+class Solution8_ {
     public boolean solution(int x) {
         boolean answer = true;
         int a = x;

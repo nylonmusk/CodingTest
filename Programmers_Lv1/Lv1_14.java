@@ -16,10 +16,29 @@ package Programmers_Lv1;
 
 
 public class Lv1_14 {
-	
+	public static void main(String[] args) {
+		long l = solution_(5, 10);
+		System.out.println(l);
+	}
+	public static long solution_(int a, int b) {
+        long answer = 0;
+        if(a<b) {
+        	for(int i = a; i<=b; i++) {
+        		answer+=i;
+        	}
+        }else {
+        	for(int i = b; i<=a; i++) {
+        		answer+=i;
+        	}
+        }
+        
+		return answer;
+        
+    }
 }
-// 다시풀자 
-//class Solution {
+
+// 다시풀자  틀림 
+//class Solution14 {
 //    public long solution(int a, int b) {
 //        long answer = 0;
 //        if(a<b) {
@@ -39,18 +58,18 @@ public class Lv1_14 {
 //    }
 //}
 
-class Solution14 {
-    public long solution_(int a, int b) {
-        long answer = 0;
-        int l = 0;
-        boolean x = (a==b) ? true : false;
-        if(x==true) {
-        	answer=a;
-        }else if(x==false) {
-        	if((b-a)%2==0 | (a-b)%2==0) {
-        		
-        	}
-        }
-        return answer;
-    }
-}
+//class Solution14_ {
+//    public long solution_(int a, int b) {
+//        long answer = 0;
+//        int l = 0;
+//        boolean x = (a==b) ? true : false;
+//        if(x==true) {
+//        	answer=a;
+//        }else if(x==false) {
+//        	if((b-a)%2==0 | (a-b)%2==0) {
+//        		
+//        	}
+//        }
+//        return answer;
+//    }
+//}
